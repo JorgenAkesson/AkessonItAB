@@ -1,0 +1,18 @@
+﻿<%@ Page Title="Åkesson IT AB" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="Webbyrå.aspx.cs" Inherits="Webbyrå" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+        <script>
+            $(document).ready(function () {
+                $("#webbyrå").addClass("Active");
+            });
+    </script>
+<h2>
+        Webbyrå
+    </h2>
+    <p>
+        Text kommer här!
+    </p>
+</asp:Content>

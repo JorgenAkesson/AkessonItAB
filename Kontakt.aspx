@@ -1,0 +1,19 @@
+﻿<%@ Page Title="Åkesson IT AB" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="Kontakt.aspx.cs" Inherits="Kontakt" %>
+
+<%@ Register TagPrefix="uc" TagName="mail" Src="~/Usercontrols/Mail.ascx" %>
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <script>
+        $(document).ready(function () {
+            $("#kontakt").addClass("Active");
+        });
+    </script>
+    <h2>
+        Kontakt
+    </h2>
+    <p>
+        <uc:mail runat="server"></uc:mail>
+    </p>
+</asp:Content>

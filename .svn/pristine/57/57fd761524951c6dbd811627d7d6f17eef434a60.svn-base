@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Åkesson IT AB</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="Components/jquery.js"></script>
+</head>
+<body>
+    <form runat="server">
+    <div class="site">
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="headerBackground">
+            <div id="header" class="header">
+                <div class="logo">
+                    <a href="Default.aspx">
+                        <img src="Images/ÅkessonITAB.png" alt="Åkesson IT AB" />
+                    </a>
+                </div>
+                <div class="menu">
+                    <%--<asp:Menu CssClass="Menu1" ID="Menu1" runat="server" EnableViewState="false" IncludeStyleBlock="false"
+                        Orientation="Horizontal">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Hem" />
+                            <asp:MenuItem NavigateUrl="~/Om.aspx" Text="Om" />
+                            <asp:MenuItem NavigateUrl="~/Webbyrå.aspx" Text="Webbyrå" />
+                            <asp:MenuItem NavigateUrl="~/Kontakt.aspx" Text="Kontakt" />
+                            <asp:MenuItem NavigateUrl="~/HittaHit.aspx" Text="Hitta hit" />
+                        </Items>
+                    </asp:Menu>
+                    --%>
+                    <ul id="Menu1" class="Menu1">
+                        <li><a id="default" href="Default.aspx">Hem</a></li>
+                        <li><a id="om" href="Om.aspx">Tjänster</a></li>
+                        <li><a id="webbyrå" href="Webbyrå.aspx">Webbyrå</a></li>
+                        <li><a id="kontakt" href="Kontakt.aspx">Kontakt</a></li>
+                        <li><a id="hittahit" href="HittaHit.aspx">Hitta hit</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="footer">
+            <div class="fotterContent">
+                <div class="fotterContentInner">
+                    <div class="fotterContentInner1">
+                        <h2>
+                            Kontakt uppgifter</h2>
+                        <h3 style="color: #87A422">
+                            Åkesson IT AB
+                        </h3>
+                        <p>
+                            Jörgen Åkesson<br />
+                            Babordsvägen 11<br />
+                            s-432 74 Träslövsläge<br />
+                            +46 (0)70 878212<br />
+                            <a style="color: #87A422;" href="mailto:jorg.akesson@gmail.com?">jorg.akesson@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="fotterContentInner">
+                    <div class="fotterContentInner1">
+                        <h2>
+                            Mitten</h2>
+                        <p>
+                            Text kommer här!
+                        </p>
+                    </div>
+                </div>
+                <div class="fotterContentInner">
+                    <div class="fotterContentInner1">
+                        <h2>
+                            Referenser</h2>
+                        <p>
+                            Text kommer här!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="margin: 0px; float: right; color: gray">
+            &copy; 2012 Åkesson IT AB&nbsp;&nbsp;&nbsp;
+        </p>
+        <div class="clear">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿<%@ Page Title="Åkesson IT AB" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="Default.aspx.cs" Inherits="_Default" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <script>
+        $(document).ready(function () {
+            $("#default").addClass("Active");
+        });
+    </script>
+    <h2>
+        Hem
+    </h2>
+    <p>
+           Text kommer här!
+    </p>
+</asp:Content>

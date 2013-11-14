@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Åkesson IT AB</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <script src="Components/jquery.js"></script>
+    <!-- include Cycle plugin -->
+    <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+</head>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34963577-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<body>
+    <form runat="server">
+    <div class="site">
+        <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <img src="Images/Top.png" style="z-index: 50" />
+        <div class="headerBackground">
+            <div id="header" class="header">
+                <div class="logo">
+                    <a href="Default.aspx">
+                        <img src="Images/ÅkessonITAB.png" alt="Åkesson IT AB" />
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul id="Menu1" class="Menu1">
+                        <li><a id="default" href="Default.aspx">Hem</a></li>
+                        <li><a id="om" href="Om.aspx">Tjänster</a></li>
+                        <li><a id="webbyrå" href="Webbyrå.aspx">Webbyrå</a></li>
+                        <li><a id="referenser" href="Referenser.aspx">Referenser</a></li>
+                        <li><a id="kontakt" href="Kontakt.aspx">Kontakt</a></li>
+                        <li><a id="hittahit" href="HittaHit.aspx">Hitta hit</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div class="footer">
+            <div class="fotterContent">
+                <div class="fotterContentInner">
+                    <div class="fotterContentInner1">
+                        <h2>
+                            Kontakt uppgifter</h2>
+                        <h3 style="color: #87A422">
+                            Åkesson IT AB
+                        </h3>
+                        <p>
+                            Jörgen Åkesson<br />
+                            Babordsvägen 11<br />
+                            s-432 74 Träslövsläge<br />
+                            +46 (0)70 878212<br />
+                            <a style="color: #87A422;" href="mailto:jorg.akesson@gmail.com?">jorg.akesson@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="fotterContentInner">
+                    <div class="fotterContentInner1">
+                        <h2>
+                            Affärsidé</h2>
+                        <p>
+                            Företaget affärsidé är att tillhandahålla kundfokuserade högkvalitativa konsulttjänster
+                            inom IT.
+                        </p>
+                        <p>
+                            Inneahar F-skattbevis.</p>
+                    </div>
+                </div>
+                <div class="fotterContentInner">
+                    <div class="fotterContentInner1">
+                        <h2>
+                            Referenser</h2>
+                        <p>
+                            <a href="Referenser.aspx">Capma</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="Images/Bottom.png" style="z-index: 50" />
+        <p style="margin: 0px; float: right; color: gray">
+            &copy; 2012 Åkesson IT AB&nbsp;&nbsp;&nbsp;
+        </p>
+        <div class="clear">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

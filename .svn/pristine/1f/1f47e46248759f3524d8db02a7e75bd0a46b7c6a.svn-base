@@ -1,0 +1,53 @@
+﻿<%@ Page Title="Åkesson IT AB" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
+    CodeFile="Webbyrå.aspx.cs" Inherits="Webbyrå" %>
+
+<asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent">
+</asp:Content>
+<asp:Content ID="BodyContent" runat="server" ContentPlaceHolderID="MainContent">
+    <script>
+        $(document).ready(function () {
+            $("#webbyrå").addClass("Active");
+        });
+    </script>
+    <h2>
+        Vi bygger din hemsida</h2>
+    <p>
+        Vi kan hjälpa dig att bygga er hemsida. 
+        Vi erbjuder serverplats vid behov.</p>
+    <p>
+        Kom till oss om ni vill:</p>
+    <ul>
+        <em>
+            <li>Skapa en hemsida till ert företag som beskriver era tjänster eller produkter.</li>
+            <li>Förändra er befintliga hemsida så den blir snyggare eller får mer information.</li>
+        </em>
+    </ul>
+    <p>
+        Detta ingår:</p>
+    <ul>
+        <em>
+            <li>Startsida med 4 undersidor</li>
+            <li>Text och bilder</li>
+            <li>Kontaktformuär</li>
+            <li>4 uppdateringar av text eller bilder per år</li>
+            <li>Server plats</li>
+            <li>Support</li>
+            <li>Sökoptimering</li>
+        </em>
+    </ul>
+    <p>
+        Tillval:</p>
+    <ul>
+        <em>
+            <li>CMS (Möjlighet att själv editera sidan)</li>
+            <li>Domain namn</li>
+        </em>
+    </ul>
+    <p>
+        <span style="font-size: medium"><strong><em>Pris från endast 2999 kr.</em></strong></span><br />
+        * Tillkommer en månadskostnad på 99kr<br />
+        * Alla priser är exlusive moms</p>
+    <h2>
+        <a style="color: #87A422;" href="Kontakt.aspx">Kontakta oss så hjälper vi dig!</a>
+    </h2>
+</asp:Content>
