@@ -15,7 +15,7 @@
             Vi är den lilla Webbyrån i Varberg med de stora möjligheterna och vi vill hjälpa dig att skapa just din Websida så som du önskar.<br />
             Du kanske vill presentera ditt företag med dess produkter och tjänster på ett snyggt och säljande sätt eller skapa en personlig sida för din familj.
         </p>
-        <p>
+<%--        <p>
             <p1>Hur går vi till väga?</p1>
             <br />
             <p2>Träffas</p2>
@@ -59,7 +59,7 @@
             * Tillkommer månadskostnad på 99kr<br />
             * Alla priser är exlusive moms<br />
             * Tillkommer kostnad för Domain namn
-        </p>
+        </p>--%>
         <h2>
             <a style="color: #87A422;" href="Kontakt.aspx">Kontakta oss så hjälper vi dig!</a>
         </h2>
